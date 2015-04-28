@@ -483,12 +483,12 @@ if (!$error && isset($_REQUEST["delete"]) && $_REQUEST["delete"]!=basename($_SER
 					echo "<td align=center><a href=\"".$_SERVER['SCRIPT_NAME']."?import=".$dirfile."\">Import</a></td>\n";
 					}
 					echo "<td align=center><a href=\"".$_SERVER['SCRIPT_NAME']."?delete=".urlencode($dirfile)."\">Delete file</a></td>";
-					echo "<td align=center><a href=".DIR_WS_CATALOG.$tempdir.$dirfile." target=_blank>Download</a></td></tr>\n";
+					echo "<td align=center><a href=".HTTP_SERVER.DIR_WS_CATALOG.$tempdir.$dirfile." target=_blank>Download</a></td></tr>\n";
 				} else {		  
 					echo "<td>&nbsp;</td>\n";
 					echo "<td>&nbsp;</td>\n";
 					echo "<td align=center><a href=\"".$_SERVER['SCRIPT_NAME']."?delete=".urlencode($dirfile)."\">Delete file</a></td>";
-					echo "<td align=center><a href=".DIR_WS_CATALOG.$tempdir.$dirfile." target=_blank>Download</a></td></tr>\n";
+					echo "<td align=center><a href=".HTTP_SERVER.DIR_WS_CATALOG.$tempdir.$dirfile." target=_blank>Download</a></td></tr>\n";
 				}
 			} // if (file types)
 		} // foreach
